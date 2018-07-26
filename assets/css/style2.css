@@ -1,7 +1,16 @@
 body {
     height: 100%;
-    background-color: black
+   
   }
+
+  h1{
+
+    padding-top: 20px;
+    color: black;
+    font-family: Merienda;
+  }
+ 
+  
   p{
 
     color: black;
@@ -10,13 +19,6 @@ body {
     font-size: 25px;
  }
 
-.contenedorFoto {
-    background-color: black;
-    background-size: cover;
-    background-position-y: center;
-    padding: 50px;
-    border: 1em;
-}
 
 img {
     width: 110px;
