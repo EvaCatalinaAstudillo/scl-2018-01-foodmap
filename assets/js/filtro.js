@@ -1,3 +1,4 @@
+//filtro nombre
 const inputText= document.querySelector("input");
 const boton= document.getElementById("boton");
 const listaRestaurant= document.getElementById("listaRestaurant");
@@ -23,7 +24,7 @@ boton.addEventListener("click", event=>{
 const renderInfo = datos => {
   listaRestaurant.innerHTML = "";
   datos.restaurants.forEach((restaurant) => {
-    
+
     listaRestaurant.innerHTML += `<div class="restaurant">
     <p>Nombre: ${restaurant.restaurant.name}</p>
     <p>Dirección: ${restaurant.restaurant.location.address}</p>

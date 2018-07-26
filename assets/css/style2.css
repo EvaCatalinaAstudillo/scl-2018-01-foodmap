@@ -1,22 +1,14 @@
 body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    background-color: black
   }
   p{
 
-    color: orange;
+    color: black;
     position: center;
     font-family: Merienda;
-    font-size: 3em;
+    font-size: 25px;
  }
-
- .separacion {
-
-    background: whitesmoke;
-    padding: 1px;
-}
-
 
 .contenedorFoto {
     background-color: black;
@@ -27,27 +19,30 @@ body {
 }
 
 img {
-    width: 220px;
-    height: 220px;
+    width: 110px;
+    height: 110px;
 }
 #map{
-    width:400px;
-    height:300px;
-    border:1px solid;
+    width:600px;
+    height: 400px;
+    margin: 20px;
+
   }
 
   .container{
     border-radius: 30px;  
-    height: 50vh;  
+    height: 50px;  
   }
   #titulo{
     margin-top: 50px;
-    color: red;
+    color: black;
+    font-family: Merienda;
   }
   
   #subtitulo{
     padding-top: 20px;
-    color: red;
+    color: black;
+    font-family: Merienda;
   }
 
   #busqueda{
@@ -74,4 +69,22 @@ img {
     color: black;
     font-weight: bold;
   }
-  
+  .imagenes {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fotosCategorias {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

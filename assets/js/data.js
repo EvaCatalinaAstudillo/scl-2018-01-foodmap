@@ -16,7 +16,7 @@ function callback(results, status) {
 }
 
 function searchRestaurant(){
-    const busqueda = document.getElementById('search').value;
+    const busqueda = document.getElementById('search').value;zz
     map = new google.maps.Map(document.getElementById('map'), {
         center: santiago,
         zoom: 13,
