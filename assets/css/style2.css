@@ -1,0 +1,52 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+
+    color: orange;
+    position: center;
+    font-family: Merienda;
+    font-size: 3em;
+ }
+
+ .separacion {
+
+    background: whitesmoke;
+    padding: 1px;
+}
+
+.contenedorMapa {
+
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position-y: center;
+    padding: 100px;
+}
+#form {
+    line-height: 130px;
+}
+.article {
+    margin: 1px auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.contenedorFoto {
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position-y: center;
+    padding: 50px;
+    border: 1em;
+}
+
+img {
+    width: 220px;
+    height: 220px;
+}
+#map{
+    width:400px;
+    height:300px;
+    border:1px solid;
+  }
