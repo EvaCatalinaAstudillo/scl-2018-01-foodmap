@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style2.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style2.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places"></script>
     <title>F O O D M A P</title>
 </head>
+
 <body>
     <section>
         <center>
-            <h1>F o o d m a p</h1>
+            <h1>F O O D M A P</h1>
         </center>
     </section>
+
     <section>
         <center>
-        </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
-        <div id="map" class="map" style="width: 700px; height: 500px;"></div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-      </div> 
-    </center>        
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center">
+                        <p>Los mejores restaurantes</p>
+                    </div>
+                </div>
+            </div>
+        </center>
     </section>
-    
-<!--data imagen-->
+
+    <section>
+        <center>
+    <div id="map"></div>
+   </center>
+    </section>
+
+    <section>
+        <center>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center" id="fondo">
+                        <h1 id="titulo">FoodMap</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center" id="fondo">
+                        <h2 id="subtitulo">Busca toda la comida que quieras!</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center" id="fondo">
+                        <input type="text" id="busqueda" placeholder="Busca restaurantes o tipos de comida">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center" id="fondo">
+                        <button type="button" id="boton">Buscar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 text-center">
+                        <div class="col-12 col-md-12 text-center" id="listaRestaurant"></div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </section>
 
 
-<section id="imagenFondo">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-12 text-center" id="fondo">
-              <h1 id="titulo">FoodMap</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-12 text-center" id="fondo">
-              <h2 id="subtitulo">Busca toda la comida que quieras!</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-12 text-center" id="fondo">
-              <input type="text" id="busqueda" placeholder="¿Qué buscas?">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-12 text-center" id="fondo">
-              <button type="button" id="boton">Buscar</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-12 text-center">
-              <div class="col-12 col-md-12 text-center" id="listaRestaurant"></div>        
-            </div>
-          </div>
-        </div>
-      </section>
-    
 
 
-
-        <!--enlaces de bootstrap-->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!--enlaces de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
     <script src="assets/js/data.js"></script>
-    <script async defer   
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Ay352O5yI8mGNg-COziy_n2ePwmZkk4&libraries=places&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Ay352O5yI8mGNg-COziy_n2ePwmZkk4&libraries=places&callback=initMap">
     </script>
-        <script src="assets/js/app.js"></script>
-        <script src="assets/js/filtro.js"></script>
-      </body>
-    </html>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/filtro.js"></script>
+</body>
+
+</html>
