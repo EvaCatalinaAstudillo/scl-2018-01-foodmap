@@ -34,6 +34,18 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     'Error: The Geolocation service failed.' :
     'Error: Your browser doesn\'t support geolocation.');
   infoWindow.open(map);
-}
 
-  
+  const service = new google.maps.places.PlacesService(map);
+service.nearbySearch({
+    location: santiago,
+    radius: 700,
+    types: ['restaurant', 'food'],
+}, callback);
+
+
+function callback(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+        for (let i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+        }
+      }}}
