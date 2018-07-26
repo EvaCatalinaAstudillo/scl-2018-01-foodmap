@@ -17,24 +17,9 @@ body {
     padding: 1px;
 }
 
-.contenedorMapa {
-
-    background-color: whitesmoke;
-    background-size: cover;
-    background-position-y: center;
-    padding: 100px;
-}
-#form {
-    line-height: 130px;
-}
-.article {
-    margin: 1px auto;
-    text-align: center;
-    padding: 30px;
-}
 
 .contenedorFoto {
-    background-color: whitesmoke;
+    background-color: black;
     background-size: cover;
     background-position-y: center;
     padding: 50px;
@@ -50,3 +35,43 @@ img {
     height:300px;
     border:1px solid;
   }
+
+  .container{
+    border-radius: 30px;  
+    height: 50vh;  
+  }
+  #titulo{
+    margin-top: 50px;
+    color: red;
+  }
+  
+  #subtitulo{
+    padding-top: 20px;
+    color: red;
+  }
+
+  #busqueda{
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .restaurant {
+    font-weight: bold;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+    margin: 90px;
+    padding-top: 10px;
+    border-radius: 30px;
+    
+  }
+  
+  #boton{
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 90px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+  }
+  
