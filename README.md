@@ -1,6 +1,6 @@
 #  F O O D M A P
 
-#Presentación
+## Presentación
 
 Footmap es un sitio para encontrar y filtrar restaurantes desde su base de datos. 
 
