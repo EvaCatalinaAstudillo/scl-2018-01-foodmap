@@ -11,7 +11,7 @@ Para la planificación de este proyecto, se utilizó la herramienta **trello**.
 
 [Ir a planificación](https://trello.com/b/PBV7sgCd/proyecto-final-restaurante)
 
-
+## Despliegue
 
 [Ir a App](https://evacatalinaastudillo.github.io/scl-2018-01-foodmap//index.html)
 
